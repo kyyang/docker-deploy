@@ -15,8 +15,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /var/logBase/:/applog
       - /usr/share/fonts/zh:/usr/share/fonts/zh
-      - /var/appBase/boc_mall/conf/context.xml:/usr/local/tomcat-8.5.27/conf/context.xml
-      - /var/infrImgBase/tomcat/tomcat-8.5.27/lib:/usr/local/tomcat-8.5.27/lib
+      - /data/appBase/boc_mall/conf/context.xml:/usr/local/tomcat-8.5.27/conf/context.xml
+      - /data/infrImgBase/tomcat/tomcat-8.5.27/lib:/usr/local/tomcat-8.5.27/lib
     environment:
       #Java runtime parameter with jmx exporter
       - "JAVA_OPTS=-server \
