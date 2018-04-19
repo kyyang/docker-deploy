@@ -1,0 +1,26 @@
+<configuration>
+  <publicconfig>
+    <base_image_name>tomcat8.5.27:1.9</base_image_name>
+    <registry_url>you-registry.domain.com/username</registry_url>
+  </publicconfig>
+  <services>
+    <service>
+      <Name>appname_test</Name>
+      <Port>8183</Port>
+      <ReplicasNum>2</ReplicasNum>
+      <Xms>512m</Xms>
+      <Xmx>512m</Xmx>
+      <NewSize>256</NewSize>
+      <NetworkName>my_network</NetworkName>
+    </service>
+    <service>
+      <Name>appname_admin</Name>
+      <Port>8204</Port>
+      <ReplicasNum>2</ReplicasNum>
+      <Xms>512m</Xms>
+      <Xmx>512m</Xmx>
+      <NewSize>256</NewSize>
+      <NetworkName>my_network</NetworkName>
+    </service>
+  </services>
+</configuration>

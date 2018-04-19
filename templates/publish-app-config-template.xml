@@ -1,0 +1,17 @@
+<configuration>
+  <publicconfig>
+    <base_image_name>tomcat8.5.27:1.9</base_image_name>
+    <registry_url>registry-vpc.cn-shenzhen.aliyuncs.com/uplus</registry_url>
+  </publicconfig>
+  <services>
+    <service>
+      <Name>ccb_xiaov</Name>
+      <Port>8183</Port>
+      <ReplicasNum>2</ReplicasNum>
+      <Xms>512m</Xms>
+      <Xmx>512m</Xmx>
+      <NewSize>256</NewSize>
+      <NetworkName>uplusnet-a</NetworkName>
+    </service>
+  </services>
+</configuration>
